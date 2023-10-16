@@ -61,7 +61,7 @@ export interface StateContainer {
 // model namespace cache
 const cached = {};
 
-let stateContainer: any = wx["_stateContainer_"];
+let stateContainer: any = undefined;
 
 // eslint-disable-next-line no-console
 const defaultOnError = (err: any) => console.error(err);
@@ -75,9 +75,11 @@ function createStateContainer({
   NODE_ENV = "production",
   onError = defaultOnError,
 }: ArgsI = {}) {
-  if (stateContainer) return stateContainer as StateContainer;
+  if (stateContainer) {
+    return stateContainer as StateContainer;
+  }
 
-  wx["_stateContainer_"] = stateContainer = create({ onError });
+  stateContainer = create({ onError });
 
   stateContainer.use(createLoading());
 
@@ -103,11 +105,4 @@ function createStateContainer({
   return stateContainer as StateContainer;
 }
 
-const dvaContainer = createStateContainer({
-  NODE_ENV: process.env.NODE_ENV,
-  onError: (err) => {
-    console.error(err);
-  },
-});
-
-export default dvaContainer;
+export default createStateContainer;

@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dva-core": "^2.0.4",
+    "dva-loading": "^3.0.24",
+    "redux": "^4.2.1"
+  }
 }
