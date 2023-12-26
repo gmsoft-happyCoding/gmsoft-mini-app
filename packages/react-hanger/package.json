@@ -2,6 +2,9 @@
   "name": "@gmsoft-mini-app/react-hanger",
   "version": "1.0.0",
   "description": "",
+  "publishConfig": {
+    "registry": "http://192.168.2.10:8081/repository/npm.hosted/"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup --config"
