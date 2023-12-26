@@ -1,8 +1,8 @@
 {
-  "name": "state-container",
+  "name": "@gmsoft-mini-app/state-container",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rollup --config"
   },

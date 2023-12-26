@@ -1,14 +1,17 @@
 {
   "name": "gmsoft-mini-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "大家软件小程序使用的生态库工具组合包",
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=8"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r --filter='./packages/**' run build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dva-core": "^2.0.4",
     "dva-loading": "^3.0.24",
