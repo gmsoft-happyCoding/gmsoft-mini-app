@@ -20,7 +20,10 @@
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
-    "rollup": "^4.1.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/lodash": "^4.14.202",
+    "@types/react": "^18.2.45",
+    "rollup": "3.29.4",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
   }
