@@ -12,5 +12,9 @@ module.exports = {
     sourcemap: true,
   },
   external: ["dva-core", "dva-loading", "react", "redux", "react-redux"],
-  plugins: [commonjs(), typescript(), babel({ babelHelpers: "bundled" })],
+  plugins: [
+    commonjs(),
+    typescript(),
+    babel({ babelHelpers: "bundled" }),
+  ],
 };
