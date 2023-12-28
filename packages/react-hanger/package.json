@@ -1,6 +1,6 @@
 {
   "name": "@gmsoft-mini-app/react-hanger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "publishConfig": {
     "registry": "http://192.168.2.10:8081/repository/npm.hosted/"
@@ -14,8 +14,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.21",
-    "react": "^18.2.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-redux": "8.1.2",
+    "redux": "4.2.1"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
     "react-redux": "8.1.2",
     "redux": "4.2.1"
   }
