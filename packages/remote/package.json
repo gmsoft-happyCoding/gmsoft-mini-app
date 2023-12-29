@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build:dev": "webpack --config webpack.dev.config.js",
+    "build:pro": "webpack --config webpack.pro.config.js",
+    "build": "pnpm run build:dev && pnpm run build:pro"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +33,7 @@
     "@babel/core": "^7.23.6",
     "@babel/plugin-transform-runtime": "^7.23.6",
     "@babel/preset-env": "^7.23.6",
+    "@linaria/webpack-loader": "^5.0.4",
     "babel-loader": "^9.1.3",
     "clean-webpack-plugin": "^4.0.0",
     "webpack": "^5.89.0",

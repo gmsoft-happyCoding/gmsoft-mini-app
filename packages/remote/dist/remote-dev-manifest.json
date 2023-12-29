@@ -1,5 +1,5 @@
 {
-  "name": "remote",
+  "name": "remote-dev",
   "content": {
     "./node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs": {
       "id": "../../node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs",

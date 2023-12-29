@@ -19,26 +19,11 @@ const PRO_DLL_LIBRARY = [
   "@gmsoft-mini-app/state-container",
 ];
 
-const DEV_DLL_LIBRARY = PRO_DLL_LIBRARY.concat("react-reconciler");
-
-console.log(process.cwd());
-
 module.exports = {
-  mode: "development",
+  mode: "production",
   devtool: false,
   entry: {
-    remote: DEV_DLL_LIBRARY,
-  },
-  //   entry: {
-  //     remote:
-  //       process.env.NODE_ENV === "development"
-  //         ? DEV_DLL_LIBRARY
-  //         : PRO_DLL_LIBRARY,
-  //   },
-  resolve: {
-    // symlinks: true,
-    extensions: [".js", ".jsx"],
-    mainFields: ["main", "module", "browser"],
+    ["remote-pro"]: PRO_DLL_LIBRARY,
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -47,20 +32,33 @@ module.exports = {
       name: "[name]",
       type: "global",
     },
-    globalObject: "wx",
+    globalObject: "gmsoft",
+  },
+  resolve: {
+    symlinks: true,
+    extensions: [".js", ".jsx"],
+    mainFields: ["main", "browser", "module", "jsnext:main"],
   },
   module: {
     rules: [
       {
         test: /\.(?:js|mjs|cjs)$/,
-        use: {
-          loader: "babel-loader",
-        },
+        use: [
+          {
+            loader: "babel-loader",
+          },
+          {
+            loader: "@linaria/webpack-loader",
+            options: {
+              sourceMap: process.env.NODE_ENV !== "production",
+            },
+          },
+        ],
       },
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    //  new CleanWebpackPlugin(),
     new DllPlugin({
       context: path.resolve(process.cwd(), "../../"),
       path: path.resolve(__dirname, "./dist", "[name]-manifest.json"),
