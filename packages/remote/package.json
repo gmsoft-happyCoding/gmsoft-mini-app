@@ -2,6 +2,9 @@
   "name": "@gmsoft-mini-app/remote",
   "version": "1.0.0",
   "description": "",
+  "publishConfig": {
+    "registry": "http://192.168.2.10:8081/repository/npm.hosted/"
+  },
   "scripts": {
     "build:dev": "webpack --config webpack.dev.config.js",
     "build:pro": "webpack --config webpack.pro.config.js",
