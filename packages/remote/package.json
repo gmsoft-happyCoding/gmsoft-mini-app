@@ -32,6 +32,14 @@
     "redux": "^4.2.1",
     "redux-saga": "0.16.2"
   },
+  "dependenciesMeta": {
+    "@gmsoft-mini-app/react-hanger": {
+      "injected": true
+    },
+    "@gmsoft-mini-app/state-container": {
+      "injected": true
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.23.6",
     "@babel/plugin-transform-runtime": "^7.23.6",
