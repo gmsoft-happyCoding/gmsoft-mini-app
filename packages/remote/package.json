@@ -1,12 +1,12 @@
 {
-  "name": "remote",
+  "name": "@gmsoft-mini-app/remote",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build:dev": "webpack --config webpack.dev.config.js",
     "build:pro": "webpack --config webpack.pro.config.js",
-    "build": "pnpm run build:dev && pnpm run build:pro"
+    "build": "pnpm run build:dev && pnpm run build:pro",
+    "pub": "pnpm run build && yarn publish"
   },
   "keywords": [],
   "author": "",
