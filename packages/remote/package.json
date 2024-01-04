@@ -15,8 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@gmsoft-mini-app/react-hanger": "workspace:^",
-    "@gmsoft-mini-app/state-container": "workspace:^",
+    "@gmsoft-mini-app/react-hanger": "^1.0.2",
+    "@gmsoft-mini-app/state-container": "^1.0.0",
     "@linaria/babel-preset": "^5.0.4",
     "@linaria/core": "^6.0.0",
     "@linaria/react": "^6.0.0",
@@ -31,14 +31,6 @@
     "react-redux": "^8.1.3",
     "redux": "^4.2.1",
     "redux-saga": "0.16.2"
-  },
-  "dependenciesMeta": {
-    "@gmsoft-mini-app/react-hanger": {
-      "injected": true
-    },
-    "@gmsoft-mini-app/state-container": {
-      "injected": true
-    }
   },
   "devDependencies": {
     "@babel/core": "^7.23.6",
