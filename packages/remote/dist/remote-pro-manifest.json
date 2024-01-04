@@ -9,30 +9,6 @@
       },
       "exports": []
     },
-    "./node_modules/.pnpm/file+packages+react-hanger_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js": {
-      "id": 1780,
-      "buildMeta": {
-        "exportsType": "default",
-        "defaultObject": "redirect"
-      },
-      "exports": [
-        "useActions",
-        "useArray",
-        "useBoolean",
-        "useCountdown",
-        "useDebounce",
-        "useDebounceActions",
-        "useInput",
-        "useInterval",
-        "useLogger",
-        "useMap",
-        "useNumber",
-        "usePrevious",
-        "useSetState",
-        "useShallowEqualSelector",
-        "useStateful"
-      ]
-    },
     "./node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js": {
       "id": 2426,
       "buildMeta": {
@@ -145,9 +121,29 @@
       "id": 5039,
       "buildMeta": {}
     },
-    "./node_modules/.pnpm/file+packages+state-container/node_modules/@gmsoft-mini-app/state-container/dist/index.js": {
-      "id": 6179,
-      "buildMeta": {}
+    "./node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.2_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js": {
+      "id": 6418,
+      "buildMeta": {
+        "exportsType": "default",
+        "defaultObject": "redirect"
+      },
+      "exports": [
+        "useActions",
+        "useArray",
+        "useBoolean",
+        "useCountdown",
+        "useDebounce",
+        "useDebounceActions",
+        "useInput",
+        "useInterval",
+        "useLogger",
+        "useMap",
+        "useNumber",
+        "usePrevious",
+        "useSetState",
+        "useShallowEqualSelector",
+        "useStateful"
+      ]
     },
     "./node_modules/.pnpm/redux@4.2.1/node_modules/redux/lib/redux.js": {
       "id": 7506,
@@ -165,6 +161,10 @@
         "createStore",
         "legacy_createStore"
       ]
+    },
+    "./node_modules/.pnpm/@gmsoft-mini-app+state-container@1.0.0/node_modules/@gmsoft-mini-app/state-container/dist/index.js": {
+      "id": 7779,
+      "buildMeta": {}
     },
     "./node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs": {
       "id": 8723,

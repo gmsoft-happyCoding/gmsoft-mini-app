@@ -1,6 +1,34 @@
 {
   "name": "remote-dev",
   "content": {
+    "./node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.2_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js": {
+      "id": "../../node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.2_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js",
+      "buildMeta": {
+        "exportsType": "default",
+        "defaultObject": "redirect"
+      },
+      "exports": [
+        "useActions",
+        "useArray",
+        "useBoolean",
+        "useCountdown",
+        "useDebounce",
+        "useDebounceActions",
+        "useInput",
+        "useInterval",
+        "useLogger",
+        "useMap",
+        "useNumber",
+        "usePrevious",
+        "useSetState",
+        "useShallowEqualSelector",
+        "useStateful"
+      ]
+    },
+    "./node_modules/.pnpm/@gmsoft-mini-app+state-container@1.0.0/node_modules/@gmsoft-mini-app/state-container/dist/index.js": {
+      "id": "../../node_modules/.pnpm/@gmsoft-mini-app+state-container@1.0.0/node_modules/@gmsoft-mini-app/state-container/dist/index.js",
+      "buildMeta": {}
+    },
     "./node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs": {
       "id": "../../node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs",
       "buildMeta": {
@@ -36,34 +64,6 @@
     },
     "./node_modules/.pnpm/dva-model-creator@0.4.3/node_modules/dva-model-creator/lib/index.js": {
       "id": "../../node_modules/.pnpm/dva-model-creator@0.4.3/node_modules/dva-model-creator/lib/index.js",
-      "buildMeta": {}
-    },
-    "./node_modules/.pnpm/file+packages+react-hanger_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js": {
-      "id": "../../node_modules/.pnpm/file+packages+react-hanger_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js",
-      "buildMeta": {
-        "exportsType": "default",
-        "defaultObject": "redirect"
-      },
-      "exports": [
-        "useActions",
-        "useArray",
-        "useBoolean",
-        "useCountdown",
-        "useDebounce",
-        "useDebounceActions",
-        "useInput",
-        "useInterval",
-        "useLogger",
-        "useMap",
-        "useNumber",
-        "usePrevious",
-        "useSetState",
-        "useShallowEqualSelector",
-        "useStateful"
-      ]
-    },
-    "./node_modules/.pnpm/file+packages+state-container/node_modules/@gmsoft-mini-app/state-container/dist/index.js": {
-      "id": "../../node_modules/.pnpm/file+packages+state-container/node_modules/@gmsoft-mini-app/state-container/dist/index.js",
       "buildMeta": {}
     },
     "./node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js": {
