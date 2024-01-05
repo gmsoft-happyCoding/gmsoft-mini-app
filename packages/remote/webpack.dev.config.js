@@ -13,8 +13,8 @@ const PRO_DLL_LIBRARY = [
   "dva-core",
   "dva-loading",
   "dva-model-creator",
-  "@linaria/react",
-  "@linaria/core",
+  // "@linaria/react",
+  // "@linaria/core",
   "@gmsoft-mini-app/react-hanger",
   "@gmsoft-mini-app/state-container",
 ];
@@ -34,7 +34,7 @@ module.exports = {
       name: "[name]",
       type: "global",
     },
-    globalObject: "gmsoft",
+    globalObject: "wx",
   },
   resolve: {
     symlinks: true,
@@ -48,13 +48,17 @@ module.exports = {
         use: [
           {
             loader: "babel-loader",
-          },
-          {
-            loader: "@linaria/webpack-loader",
             options: {
-              sourceMap: process.env.NODE_ENV !== "production",
+              presets: [["@babel/preset-env", { modules: "commonjs" }]],
+              plugins: [["@babel/plugin-transform-runtime"]],
             },
           },
+          // {
+          //   loader: "@linaria/webpack-loader",
+          //   options: {
+          //     sourceMap: process.env.NODE_ENV !== "production",
+          //   },
+          // },
         ],
       },
     ],

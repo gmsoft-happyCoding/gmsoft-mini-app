@@ -46,13 +46,17 @@ module.exports = {
         use: [
           {
             loader: "babel-loader",
-          },
-          {
-            loader: "@linaria/webpack-loader",
             options: {
-              sourceMap: process.env.NODE_ENV !== "production",
+              presets: [["@babel/preset-env", { modules: "commonjs" }]],
+              plugins: [["@babel/plugin-transform-runtime"]],
             },
           },
+          // {
+          //   loader: "@linaria/webpack-loader",
+          //   options: {
+          //     sourceMap: process.env.NODE_ENV !== "production",
+          //   },
+          // },
         ],
       },
     ],
