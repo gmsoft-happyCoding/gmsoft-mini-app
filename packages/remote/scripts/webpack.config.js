@@ -48,7 +48,7 @@ module.exports = function configFactory(params) {
     resolve: {
       symlinks: true,
       extensions: [".js", ".jsx"],
-      //    mainFields: ["main", "browser", "module", "jsnext:main"],
+      mainFields: ["browser", "module", "jsnext:main", "main"], // taro 模块解析字段序列  必须与  taro 的 策略保持一致，因为webpack对模块的识别是通过包path识别的
     },
     module: {
       rules: [
@@ -58,12 +58,12 @@ module.exports = function configFactory(params) {
             {
               loader: "babel-loader",
             },
-            // {
-            //   loader: "@linaria/webpack-loader",
-            //   options: {
-            //     sourceMap: mode !== "production",
-            //   },
-            // },
+            {
+              loader: "@linaria/webpack-loader",
+              options: {
+                sourceMap: mode !== "production",
+              },
+            },
           ],
         },
       ],

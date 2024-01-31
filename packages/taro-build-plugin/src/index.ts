@@ -1,4 +1,4 @@
-import { DllReferencePlugin } from "webpack";
+import { DllReferencePlugin, sources } from "webpack";
 import { resolve } from "path";
 import { get } from "lodash";
 import { existsSync, removeSync, copySync } from "fs-extra";
@@ -65,8 +65,6 @@ export default ({ outputRoot = "./dist/weapp" }: PluginArgs) =>
       webpackChain.resolve.alias.delete("react$");
       webpackChain.resolve.alias.delete("react-reconciler$");
 
-      webpackChain.resolve.mainFields.prepend("main");
-
       // taro-react 依赖包
       webpackChain.resolve.alias.set(
         "react-reconciler/constants",
@@ -90,12 +88,15 @@ export default ({ outputRoot = "./dist/weapp" }: PluginArgs) =>
       const cachedSource = get(assets, `${entryName}.js`);
 
       if (cachedSource) {
-        // 获得 ConcatSource
-        let source = cachedSource.original();
+        const { ConcatSource } = sources;
 
-        if (source["_children"]) {
-          source["_children"].unshift(`require("./remote-dev");\n`);
-        }
+        const source = new ConcatSource();
+
+        source.add(`require("./remote_dll");\n`);
+
+        source.add(cachedSource);
+
+        assets[`${entryName}.js`] = source;
       }
     });
 
