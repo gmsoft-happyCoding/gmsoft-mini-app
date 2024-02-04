@@ -2,7 +2,7 @@ import { DllReferencePlugin, sources } from "webpack";
 import { resolve } from "path";
 import { get } from "lodash";
 import { existsSync, removeSync, copySync } from "fs-extra";
-import { IPluginContext } from "@tarojs/service";
+import type { IPluginContext } from "@tarojs/service";
 
 export enum BuildType {
   /** 主包 */
