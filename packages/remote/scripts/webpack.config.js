@@ -73,12 +73,7 @@ module.exports = function configFactory(params) {
       new CleanWebpackPlugin(),
       new DllPlugin({
         context: path.resolve(process.cwd(), "../../"),
-        path: path.resolve(
-          process.cwd(),
-          "./dist",
-          outputPath,
-          "[name]-manifest.json"
-        ),
+        path: path.resolve(process.cwd(), "./dist", outputPath, "[name].json"),
         name: "[name]",
         format: true,
       }),

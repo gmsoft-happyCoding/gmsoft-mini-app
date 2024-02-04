@@ -6,33 +6,34 @@ const configFactory = require("./webpack.config");
 const compilers = [
   {
     mode: "development",
-    entry: "remote-wx-dev",
+    entry: "remote-weapp-development",
     globalObject: "wx",
-    outputPath: "./dev-wx",
+    outputPath: "./weapp-development",
   },
   {
     mode: "development",
-    entry: "remote-dd-dev",
+    entry: "remote-dd-development",
     globalObject: "dd",
-    outputPath: "./dev-dd",
+    outputPath: "./dd-development",
   },
   {
     mode: "production",
-    entry: "remote-wx-pro",
+    entry: "remote-weapp-production",
     globalObject: "wx",
-    outputPath: "./pro-wx",
+    outputPath: "./weapp-production",
   },
   {
     mode: "production",
-    entry: "remote-dd-pro",
+    entry: "remote-dd-production",
     globalObject: "dd",
-    outputPath: "./pro-dd",
+    outputPath: "./dd-production",
   },
 ];
 
 compilers.reduce(async (pre, cur) => {
   try {
     await pre;
+    console.log(`${cur.entry}:开始构建`);
     return new Promise((resolve, reject) => {
       const compiler = webpack(configFactory(cur));
 
@@ -45,11 +46,13 @@ compilers.reduce(async (pre, cur) => {
             })
           );
           reject(err);
+        } else {
+          console.log(`${cur.entry}:构建完成`);
+          resolve();
         }
 
-        console.log(`${cur.entry}:构建完成`);
-
-        resolve();
+        // 关闭编译
+        compiler.close((closeErr) => {});
       });
     });
   } catch (error) {

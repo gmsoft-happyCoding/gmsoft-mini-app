@@ -20751,10 +20751,10 @@ module.exports = warning;
 
 /***/ }),
 
-/***/ "?b32f":
-/*!*************************!*\
-  !*** dll remote-wx-dev ***!
-  \*************************/
+/***/ "?e323":
+/*!************************************!*\
+  !*** dll remote-weapp-development ***!
+  \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__;
@@ -22077,8 +22077,8 @@ var styled_default = exports.styled =  true ? new Proxy(styled, {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("?b32f");
-/******/ 	wx["remote-wx-dev"] = __webpack_exports__;
+/******/ 	var __webpack_exports__ = __webpack_require__("?e323");
+/******/ 	wx["remote-weapp-development"] = __webpack_exports__;
 /******/ 	
 /******/ })()
 ;

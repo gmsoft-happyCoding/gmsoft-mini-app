@@ -20751,10 +20751,10 @@ module.exports = warning;
 
 /***/ }),
 
-/***/ "?2913":
-/*!*************************!*\
-  !*** dll remote-dd-dev ***!
-  \*************************/
+/***/ "?9f71":
+/*!*********************************!*\
+  !*** dll remote-dd-development ***!
+  \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__;
@@ -22077,8 +22077,8 @@ var styled_default = exports.styled =  true ? new Proxy(styled, {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("?2913");
-/******/ 	dd["remote-dd-dev"] = __webpack_exports__;
+/******/ 	var __webpack_exports__ = __webpack_require__("?9f71");
+/******/ 	dd["remote-dd-development"] = __webpack_exports__;
 /******/ 	
 /******/ })()
 ;
