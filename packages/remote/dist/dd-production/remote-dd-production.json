@@ -1,47 +1,28 @@
 {
   "name": "remote-dd-production",
   "content": {
-    "./node_modules/.pnpm/react-redux@8.1.3_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
-      "id": 767,
-      "buildMeta": {
-        "exportsType": "flagged",
-        "defaultObject": "redirect"
-      },
-      "exports": [
-        "Provider",
-        "ReactReduxContext",
-        "__esModule",
-        "batch",
-        "connect",
-        "createDispatchHook",
-        "createSelectorHook",
-        "createStoreHook",
-        "shallowEqual",
-        "useDispatch",
-        "useSelector",
-        "useStore"
-      ]
-    },
-    "./node_modules/.pnpm/dva-core@2.0.4_redux@4.2.1/node_modules/dva-core/dist/index.esm.js": {
-      "id": 1441,
-      "buildMeta": {
-        "exportsType": "flagged",
-        "defaultObject": "redirect"
-      },
-      "exports": [
-        "__esModule",
-        "create",
-        "saga",
-        "utils"
-      ]
-    },
     "./node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs": {
       "id": 1483,
       "buildMeta": {
         "exportsType": "namespace",
-        "strictHarmonyModule": true
+        "strictHarmonyModule": true,
+        "sideEffectFree": true
       },
-      "exports": []
+      "exports": [
+        "css",
+        "cx"
+      ]
+    },
+    "./node_modules/.pnpm/dva-core@2.0.4_redux@4.2.1/node_modules/dva-core/dist/index.esm.js": {
+      "id": 2241,
+      "buildMeta": {
+        "exportsType": "namespace"
+      },
+      "exports": [
+        "create",
+        "saga",
+        "utils"
+      ]
     },
     "./node_modules/.pnpm/react@18.2.0/node_modules/react/index.js": {
       "id": 3182,
@@ -87,37 +68,70 @@
         "version"
       ]
     },
-    "./node_modules/.pnpm/dva-model-creator@0.4.3/node_modules/dva-model-creator/lib/index.js": {
-      "id": 5700,
-      "buildMeta": {}
-    },
     "./node_modules/.pnpm/@linaria+react@6.0.0_react@18.2.0/node_modules/@linaria/react/dist/index.mjs": {
-      "id": 6518,
+      "id": 5365,
       "buildMeta": {
         "exportsType": "namespace",
         "strictHarmonyModule": true
       },
-      "exports": []
+      "exports": [
+        "styled"
+      ]
     },
-    "./node_modules/.pnpm/dva-loading@3.0.24_dva-core@2.0.4/node_modules/dva-loading/dist/index.esm.js": {
-      "id": 6995,
+    "./node_modules/.pnpm/redux@4.2.1/node_modules/redux/es/redux.js": {
+      "id": 5515,
       "buildMeta": {
-        "exportsType": "flagged",
-        "defaultObject": "redirect"
+        "exportsType": "namespace"
       },
       "exports": [
-        "__esModule",
+        "__DO_NOT_USE__ActionTypes",
+        "applyMiddleware",
+        "bindActionCreators",
+        "combineReducers",
+        "compose",
+        "createStore",
+        "legacy_createStore"
+      ]
+    },
+    "./node_modules/.pnpm/react-redux@8.1.3_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
+      "id": 5636,
+      "buildMeta": {
+        "exportsType": "namespace"
+      },
+      "exports": [
+        "Provider",
+        "ReactReduxContext",
+        "batch",
+        "connect",
+        "createDispatchHook",
+        "createSelectorHook",
+        "createStoreHook",
+        "shallowEqual",
+        "useDispatch",
+        "useSelector",
+        "useStore"
+      ]
+    },
+    "./node_modules/.pnpm/dva-model-creator@0.4.3/node_modules/dva-model-creator/lib/index.js": {
+      "id": 5700,
+      "buildMeta": {}
+    },
+    "./node_modules/.pnpm/dva-loading@3.0.24_dva-core@2.0.4/node_modules/dva-loading/dist/index.esm.js": {
+      "id": 7444,
+      "buildMeta": {
+        "exportsType": "namespace",
+        "sideEffectFree": true
+      },
+      "exports": [
         "default"
       ]
     },
     "./node_modules/.pnpm/@gmsoft-mini-app+state-container@1.0.1/node_modules/@gmsoft-mini-app/state-container/dist/index.esm.js": {
       "id": 7881,
       "buildMeta": {
-        "exportsType": "flagged",
-        "defaultObject": "redirect"
+        "exportsType": "namespace"
       },
       "exports": [
-        "__esModule",
         "default"
       ]
     },
@@ -145,23 +159,6 @@
         "useStateful"
       ]
     },
-    "./node_modules/.pnpm/redux@4.2.1/node_modules/redux/es/redux.js": {
-      "id": 8446,
-      "buildMeta": {
-        "exportsType": "flagged",
-        "defaultObject": "redirect"
-      },
-      "exports": [
-        "__DO_NOT_USE__ActionTypes",
-        "__esModule",
-        "applyMiddleware",
-        "bindActionCreators",
-        "combineReducers",
-        "compose",
-        "createStore",
-        "legacy_createStore"
-      ]
-    },
     "./node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js": {
       "id": 8522,
       "buildMeta": {
@@ -184,15 +181,14 @@
       ]
     },
     "./node_modules/.pnpm/redux-saga@0.16.2/node_modules/redux-saga/es/index.js": {
-      "id": 8926,
+      "id": 8933,
       "buildMeta": {
-        "exportsType": "flagged",
-        "defaultObject": "redirect"
+        "exportsType": "namespace",
+        "sideEffectFree": true
       },
       "exports": [
         "CANCEL",
         "END",
-        "__esModule",
         "buffers",
         "channel",
         "default",
