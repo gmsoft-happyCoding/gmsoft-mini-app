@@ -1,6 +1,6 @@
 {
   "name": "@gmsoft-mini-app/remote",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "publishConfig": {
     "registry": "http://192.168.2.10:8081/repository/npm.hosted/"
