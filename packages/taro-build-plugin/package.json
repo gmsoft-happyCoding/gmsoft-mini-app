@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@tarojs/service": "^3.6.22",
+    "@tarojs/service": "^3.6.23",
     "@types/fs-extra": "^11.0.4",
     "typescript": "^5.2.2",
     "webpack": "^5.89.0"

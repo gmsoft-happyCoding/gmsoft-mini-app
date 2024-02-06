@@ -1,6 +1,17 @@
 {
   "name": "remote-weapp-production",
   "content": {
+    "./node_modules/.pnpm/dva-core@2.0.4_redux@4.2.1/node_modules/dva-core/dist/index.esm.js": {
+      "id": 399,
+      "buildMeta": {
+        "exportsType": "namespace"
+      },
+      "exports": [
+        "create",
+        "saga",
+        "utils"
+      ]
+    },
     "./node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs": {
       "id": 1483,
       "buildMeta": {
@@ -11,17 +22,6 @@
       "exports": [
         "css",
         "cx"
-      ]
-    },
-    "./node_modules/.pnpm/dva-core@2.0.4_redux@4.2.1/node_modules/dva-core/dist/index.esm.js": {
-      "id": 2241,
-      "buildMeta": {
-        "exportsType": "namespace"
-      },
-      "exports": [
-        "create",
-        "saga",
-        "utils"
       ]
     },
     "./node_modules/.pnpm/react@18.2.0/node_modules/react/index.js": {
@@ -78,21 +78,6 @@
         "styled"
       ]
     },
-    "./node_modules/.pnpm/redux@4.2.1/node_modules/redux/es/redux.js": {
-      "id": 5515,
-      "buildMeta": {
-        "exportsType": "namespace"
-      },
-      "exports": [
-        "__DO_NOT_USE__ActionTypes",
-        "applyMiddleware",
-        "bindActionCreators",
-        "combineReducers",
-        "compose",
-        "createStore",
-        "legacy_createStore"
-      ]
-    },
     "./node_modules/.pnpm/react-redux@8.1.3_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
       "id": 5636,
       "buildMeta": {
@@ -117,7 +102,7 @@
       "buildMeta": {}
     },
     "./node_modules/.pnpm/dva-loading@3.0.24_dva-core@2.0.4/node_modules/dva-loading/dist/index.esm.js": {
-      "id": 7444,
+      "id": 6995,
       "buildMeta": {
         "exportsType": "namespace",
         "sideEffectFree": true
@@ -157,6 +142,21 @@
         "useSetState",
         "useShallowEqualSelector",
         "useStateful"
+      ]
+    },
+    "./node_modules/.pnpm/redux@4.2.1/node_modules/redux/es/redux.js": {
+      "id": 8446,
+      "buildMeta": {
+        "exportsType": "namespace"
+      },
+      "exports": [
+        "__DO_NOT_USE__ActionTypes",
+        "applyMiddleware",
+        "bindActionCreators",
+        "combineReducers",
+        "compose",
+        "createStore",
+        "legacy_createStore"
       ]
     },
     "./node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js": {
