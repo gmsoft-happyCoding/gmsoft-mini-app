@@ -1362,6 +1362,12 @@ packages:
     dependencies:
       regenerator-runtime: 0.13.11
 
+  /@babel/runtime@7.23.9:
+    resolution: {integrity: sha512-0CX6F+BI2s9dkUqr08KFrAIZgNFj75rdBU/DjCyYLIaV/quFjkk6T+EJ2LkZHyZTbEV4L5p97mNkUsHl2wLFAw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
+
   /@babel/template@7.22.15:
     resolution: {integrity: sha512-QPErUVm4uyJa60rkI73qneDacvdvzxshT3kksGqlGWYdOTIUOwJ7RDUL8sGqslY1uXWSL6xMFKEXDS3ox2uF0w==}
     engines: {node: '>=6.9.0'}
@@ -2109,7 +2115,7 @@ packages:
   /@tarojs/api@3.6.23:
     resolution: {integrity: sha512-lY6+S5P3rVMM7wmsQ1XEtE5o7haS/08G3Haz4EJrg7hmg3IKrC/ju4hypEq+wd4vfPY6hC3AlqMm1zcOyjuDZg==}
     dependencies:
-      '@babel/runtime': 7.18.0
+      '@babel/runtime': 7.23.9
       '@tarojs/runtime': 3.6.23(@tarojs/shared@3.6.23)
       '@tarojs/shared': 3.6.23
     dev: true
@@ -2125,7 +2131,7 @@ packages:
       '@babel/preset-env': 7.23.9(@babel/core@7.23.9)
       '@babel/preset-typescript': 7.23.3(@babel/core@7.23.9)
       '@babel/register': 7.23.7(@babel/core@7.23.9)
-      '@babel/runtime': 7.18.0
+      '@babel/runtime': 7.23.9
       '@babel/traverse': 7.23.9
       '@swc/core': 1.3.96
       '@swc/register': 0.1.10(@swc/core@1.3.96)
@@ -4043,7 +4049,7 @@ packages:
       redux:
         optional: true
     dependencies:
-      '@babel/runtime': 7.18.0
+      '@babel/runtime': 7.23.9
       '@types/hoist-non-react-statics': 3.3.3
       '@types/react': 18.2.45
       '@types/use-sync-external-store': 0.0.3
