@@ -36,6 +36,7 @@ module.exports = function configFactory(params) {
     entry: {
       [entry]: mode === "development" ? DEV_DLL_LIBRARY : PRO_DLL_LIBRARY,
     },
+    target: ["web", "es5"],
     output: {
       path: path.resolve(process.cwd(), "./dist", outputPath),
       filename: "[name].js",
