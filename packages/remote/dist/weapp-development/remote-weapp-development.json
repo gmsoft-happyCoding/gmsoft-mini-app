@@ -86,18 +86,7 @@
         "defaultObject": "redirect"
       },
       "exports": [
-        "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED",
-        "createPortal",
-        "createRoot",
-        "findDOMNode",
-        "flushSync",
-        "hydrate",
-        "hydrateRoot",
-        "render",
-        "unmountComponentAtNode",
-        "unstable_batchedUpdates",
-        "unstable_renderSubtreeIntoContainer",
-        "version"
+        "__esModule"
       ]
     },
     "./node_modules/.pnpm/react-reconciler@0.27.0_react@18.2.0/node_modules/react-reconciler/index.js": {
@@ -105,7 +94,10 @@
       "buildMeta": {
         "exportsType": "dynamic",
         "defaultObject": "redirect"
-      }
+      },
+      "exports": [
+        "__esModule"
+      ]
     },
     "./node_modules/.pnpm/react-redux@8.1.3_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
       "id": "../../node_modules/.pnpm/react-redux@8.1.3_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js",
@@ -131,7 +123,10 @@
       "buildMeta": {
         "exportsType": "dynamic",
         "defaultObject": "redirect"
-      }
+      },
+      "exports": [
+        "__esModule"
+      ]
     },
     "./node_modules/.pnpm/redux-saga@0.16.2/node_modules/redux-saga/es/index.js": {
       "id": "../../node_modules/.pnpm/redux-saga@0.16.2/node_modules/redux-saga/es/index.js",

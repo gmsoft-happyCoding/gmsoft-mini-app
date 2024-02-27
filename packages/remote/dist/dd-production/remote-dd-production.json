@@ -1,32 +1,6 @@
 {
   "name": "remote-dd-production",
   "content": {
-    "./node_modules/.pnpm/dva-core@2.0.4_redux@4.2.1/node_modules/dva-core/dist/index.esm.js": {
-      "id": 399,
-      "buildMeta": {
-        "exportsType": "namespace"
-      },
-      "exports": [
-        "create",
-        "saga",
-        "utils"
-      ]
-    },
-    "./node_modules/.pnpm/redux@4.2.1/node_modules/redux/es/redux.js": {
-      "id": 778,
-      "buildMeta": {
-        "exportsType": "namespace"
-      },
-      "exports": [
-        "__DO_NOT_USE__ActionTypes",
-        "applyMiddleware",
-        "bindActionCreators",
-        "combineReducers",
-        "compose",
-        "createStore",
-        "legacy_createStore"
-      ]
-    },
     "./node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs": {
       "id": 1483,
       "buildMeta": {
@@ -46,51 +20,7 @@
         "defaultObject": "redirect"
       },
       "exports": [
-        "Children",
-        "Component",
-        "Fragment",
-        "Profiler",
-        "PureComponent",
-        "StrictMode",
-        "Suspense",
-        "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED",
-        "cloneElement",
-        "createContext",
-        "createElement",
-        "createFactory",
-        "createRef",
-        "forwardRef",
-        "isValidElement",
-        "lazy",
-        "memo",
-        "startTransition",
-        "unstable_act",
-        "useCallback",
-        "useContext",
-        "useDebugValue",
-        "useDeferredValue",
-        "useEffect",
-        "useId",
-        "useImperativeHandle",
-        "useInsertionEffect",
-        "useLayoutEffect",
-        "useMemo",
-        "useReducer",
-        "useRef",
-        "useState",
-        "useSyncExternalStore",
-        "useTransition",
-        "version"
-      ]
-    },
-    "./node_modules/.pnpm/dva-loading@3.0.24_dva-core@2.0.4/node_modules/dva-loading/dist/index.esm.js": {
-      "id": 3236,
-      "buildMeta": {
-        "exportsType": "namespace",
-        "sideEffectFree": true
-      },
-      "exports": [
-        "default"
+        "__esModule"
       ]
     },
     "./node_modules/.pnpm/react-redux@8.1.3_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
@@ -126,6 +56,27 @@
       "id": 5700,
       "buildMeta": {}
     },
+    "./node_modules/.pnpm/dva-loading@3.0.24_dva-core@2.0.4/node_modules/dva-loading/dist/index.esm.js": {
+      "id": 6995,
+      "buildMeta": {
+        "exportsType": "namespace",
+        "sideEffectFree": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/.pnpm/dva-core@2.0.4_redux@4.2.1/node_modules/dva-core/dist/index.esm.js": {
+      "id": 7825,
+      "buildMeta": {
+        "exportsType": "namespace"
+      },
+      "exports": [
+        "create",
+        "saga",
+        "utils"
+      ]
+    },
     "./node_modules/.pnpm/@gmsoft-mini-app+state-container@1.0.1/node_modules/@gmsoft-mini-app/state-container/dist/index.esm.js": {
       "id": 7881,
       "buildMeta": {
@@ -159,6 +110,21 @@
         "useStateful"
       ]
     },
+    "./node_modules/.pnpm/redux@4.2.1/node_modules/redux/es/redux.js": {
+      "id": 8446,
+      "buildMeta": {
+        "exportsType": "namespace"
+      },
+      "exports": [
+        "__DO_NOT_USE__ActionTypes",
+        "applyMiddleware",
+        "bindActionCreators",
+        "combineReducers",
+        "compose",
+        "createStore",
+        "legacy_createStore"
+      ]
+    },
     "./node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js": {
       "id": 8522,
       "buildMeta": {
@@ -166,18 +132,7 @@
         "defaultObject": "redirect"
       },
       "exports": [
-        "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED",
-        "createPortal",
-        "createRoot",
-        "findDOMNode",
-        "flushSync",
-        "hydrate",
-        "hydrateRoot",
-        "render",
-        "unmountComponentAtNode",
-        "unstable_batchedUpdates",
-        "unstable_renderSubtreeIntoContainer",
-        "version"
+        "__esModule"
       ]
     },
     "./node_modules/.pnpm/redux-saga@0.16.2/node_modules/redux-saga/es/index.js": {
