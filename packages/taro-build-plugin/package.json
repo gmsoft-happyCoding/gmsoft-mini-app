@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "pub": "tsc &&  yarn publish"
   },
   "keywords": [],
   "author": "",

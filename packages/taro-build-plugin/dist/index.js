@@ -5,6 +5,7 @@ const webpack_1 = require("webpack");
 const path_1 = require("path");
 const lodash_1 = require("lodash");
 const fs_extra_1 = require("fs-extra");
+const AppType_enum_1 = require("./AppType.enum");
 const utils_1 = require("./utils");
 const { ConcatSource } = webpack_1.sources;
 var BuildType;
@@ -14,12 +15,17 @@ var BuildType;
     /* 分包 */
     BuildType["SUB_PACKAGE"] = "subpackage";
 })(BuildType || (exports.BuildType = BuildType = {}));
-exports.default = ({ outputRoot = "./dist/weapp" }) => (ctx, pluginOpts) => {
+exports.default = (ctx, pluginOpts) => {
     const blended = ctx.runOpts.blended || ctx.runOpts.options.blended;
-    const { appType } = pluginOpts;
+    // 获取当前要的平台
+    const appType = (0, lodash_1.get)(ctx, "runOpts.options.platform", AppType_enum_1.AppType.WEAPP);
+    // 获取 taro 编译产出目录
+    const buidDirectory = (0, lodash_1.get)(ctx, "initialConfig.outputRoot", "./dist");
     const NODE_ENV = process.env.NODE_ENV || "production";
     const directory = `${appType}-${NODE_ENV}`;
     const remoteFileName = `remote-${directory}`;
+    // 根据 平台 重组 产出目录文件夹
+    const outputPath = (0, path_1.resolve)(process.cwd(), `${buidDirectory}`);
     let entryName = "";
     // 开始编译前 钩子
     ctx.onBuildStart(() => { });
@@ -74,7 +80,6 @@ exports.default = ({ outputRoot = "./dist/weapp" }) => (ctx, pluginOpts) => {
             return;
         console.log("编译结束！");
         const rootPath = process.env.MAIN_APP_SUBMINIAPP_DIR;
-        const outputPath = (0, path_1.resolve)(__dirname, "../", `${outputRoot}`);
         if (rootPath) {
             try {
                 (0, fs_extra_1.removeSync)(rootPath);
@@ -102,9 +107,9 @@ exports.default = ({ outputRoot = "./dist/weapp" }) => (ctx, pluginOpts) => {
             return;
         // 复制 dll文件到对应的小程序目录中
         const dllFilePath = (0, path_1.resolve)(process.cwd(), `./node_modules/@gmsoft-mini-app/remote/dist/${directory}/${remoteFileName}.js`);
-        const outputPath = (0, path_1.resolve)(process.cwd(), `${outputRoot}/${remoteFileName}.js`);
+        const copyOutputPath = (0, path_1.resolve)(outputPath, `./${remoteFileName}.js`);
         if ((0, fs_extra_1.existsSync)(dllFilePath)) {
-            (0, fs_extra_1.copySync)(dllFilePath, outputPath, { overwrite: true });
+            (0, fs_extra_1.copySync)(dllFilePath, copyOutputPath, { overwrite: true });
         }
     });
 };
