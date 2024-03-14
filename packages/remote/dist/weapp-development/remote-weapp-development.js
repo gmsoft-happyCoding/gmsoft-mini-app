@@ -388,10 +388,10 @@ function memoize(fn) {
 
 /***/ }),
 
-/***/ "../../node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.4_react-redux@8.1.3_react@18.2.0/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js":
-/*!************************************************************************************************************************************************************!*\
-  !*** ../../node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.4_react-redux@8.1.3_react@18.2.0/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js ***!
-  \************************************************************************************************************************************************************/
+/***/ "../../node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.4_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ../../node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.4_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js ***!
+  \************************************************************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -400,6 +400,7 @@ function memoize(fn) {
 var react = __webpack_require__(/*! react */ "../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js");
 var debounce = __webpack_require__(/*! lodash/debounce */ "../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/debounce.js");
 var reactRedux = __webpack_require__(/*! react-redux */ "../../node_modules/.pnpm/react-redux@8.1.3_@types+react-dom@18.2.22_@types+react@18.2.65_react-dom@18.2.0_react-native_ugtvl2m5trqxnosqaovv4mfxia/node_modules/react-redux/es/index.js");
+var redux = __webpack_require__(/*! redux */ "../../node_modules/.pnpm/redux@4.2.1/node_modules/redux/es/redux.js");
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -727,25 +728,6 @@ var useDebounce = function useDebounce(f, ms, leading, trailing) {
     });
   }, [f, leading, ms, trailing]);
 };
-function bindActionCreators(actionCreators, dispatch) {
-  var boundActionCreators = {};
-  var _loop_1 = function _loop_1(key) {
-    var actionCreator = actionCreators[key];
-    if (typeof actionCreator === "function") {
-      boundActionCreators[key] = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-          args[_i] = arguments[_i];
-        }
-        return dispatch(actionCreator.apply(void 0, __spreadArray([], __read(args), false)));
-      };
-    }
-  };
-  for (var key in actionCreators) {
-    _loop_1(key);
-  }
-  return boundActionCreators;
-}
 function bindActions(actions, dispatch) {
   var boundActionCreators = {};
   // 遍历 actions, 为了绑定 async action
@@ -754,7 +736,7 @@ function bindActions(actions, dispatch) {
     if (Object.prototype.hasOwnProperty.call(actions, key)) {
       var actionCreator = actions[key];
       // @ts-ignore
-      boundActionCreators[key] = bindActionCreators(actionCreator, dispatch);
+      boundActionCreators[key] = redux.bindActionCreators(actionCreator, dispatch);
     }
   }
   return boundActionCreators;

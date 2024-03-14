@@ -71,7 +71,7 @@ importers:
     dependencies:
       '@gmsoft-mini-app/react-hanger':
         specifier: ^1.0.4
-        version: 1.0.4(react-redux@8.1.3)(react@18.2.0)
+        version: 1.0.4(react-redux@8.1.3)(react@18.2.0)(redux@4.2.1)
       '@gmsoft-mini-app/state-container':
         specifier: ^1.0.1
         version: 1.0.1
@@ -1822,15 +1822,17 @@ packages:
     dev: true
     optional: true
 
-  /@gmsoft-mini-app/react-hanger@1.0.4(react-redux@8.1.3)(react@18.2.0):
-    resolution: {integrity: sha512-dKfool2aoKE+1YuXmkExP080IY8sFzubcTR7Lq88wa4rfFMMeugUXWQzjOrvTkFXPDjC47tOmCy+iGv74rlaEg==}
+  /@gmsoft-mini-app/react-hanger@1.0.4(react-redux@8.1.3)(react@18.2.0)(redux@4.2.1):
+    resolution: {integrity: sha512-u3lSYbgpiiQUIPubY00OW1iZBR5k1MyriLBYV7NWmIlWKZYl1noe1PVSJqrX7YomJztcn63k5LXSYGNN/WTjPw==}
     peerDependencies:
       react: 18.2.0
       react-redux: 8.1.3
+      redux: 4.2.1
     dependencies:
       lodash: 4.17.21
       react: 18.2.0
       react-redux: 8.1.3(@types/react-dom@18.2.22)(@types/react@18.2.65)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(redux@4.2.1)
+      redux: 4.2.1
     dev: false
 
   /@gmsoft-mini-app/state-container@1.0.1:
