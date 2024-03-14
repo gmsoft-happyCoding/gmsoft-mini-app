@@ -125,25 +125,6 @@
         "default"
       ]
     },
-    "./node_modules/.pnpm/react-redux@8.1.3_@types+react-dom@18.2.21_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
-      "id": 8234,
-      "buildMeta": {
-        "exportsType": "namespace"
-      },
-      "exports": [
-        "Provider",
-        "ReactReduxContext",
-        "batch",
-        "connect",
-        "createDispatchHook",
-        "createSelectorHook",
-        "createStoreHook",
-        "shallowEqual",
-        "useDispatch",
-        "useSelector",
-        "useStore"
-      ]
-    },
     "./node_modules/.pnpm/redux@4.2.1/node_modules/redux/es/redux.js": {
       "id": 8446,
       "buildMeta": {
@@ -178,6 +159,25 @@
         "unstable_batchedUpdates",
         "unstable_renderSubtreeIntoContainer",
         "version"
+      ]
+    },
+    "./node_modules/.pnpm/react-redux@8.1.3_@types+react-dom@18.2.22_@types+react@18.2.65_react-dom@18.2.0_react-native_ugtvl2m5trqxnosqaovv4mfxia/node_modules/react-redux/es/index.js": {
+      "id": 8871,
+      "buildMeta": {
+        "exportsType": "namespace"
+      },
+      "exports": [
+        "Provider",
+        "ReactReduxContext",
+        "batch",
+        "connect",
+        "createDispatchHook",
+        "createSelectorHook",
+        "createStoreHook",
+        "shallowEqual",
+        "useDispatch",
+        "useSelector",
+        "useStore"
       ]
     },
     "./node_modules/.pnpm/redux-saga@0.16.2/node_modules/redux-saga/es/index.js": {
