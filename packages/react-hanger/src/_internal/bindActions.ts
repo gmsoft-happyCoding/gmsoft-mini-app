@@ -1,6 +1,21 @@
-import { bindActionCreators, Dispatch } from 'redux';
+import type { ActionCreatorsMapObject, Dispatch } from "redux";
 
-export default function<AS>(actions: AS, dispatch: Dispatch<any>) {
+function bindActionCreators(
+  actionCreators: ActionCreatorsMapObject,
+  dispatch: Dispatch
+): ActionCreatorsMapObject {
+  const boundActionCreators: ActionCreatorsMapObject = {};
+
+  for (const key in actionCreators) {
+    const actionCreator = actionCreators[key];
+    if (typeof actionCreator === "function") {
+      boundActionCreators[key] = (...args) => dispatch(actionCreator(...args));
+    }
+  }
+  return boundActionCreators;
+}
+
+export default function <AS>(actions: AS, dispatch: Dispatch<any>) {
   const boundActionCreators = {};
   // 遍历 actions, 为了绑定 async action
   // eslint-disable-next-line no-restricted-syntax

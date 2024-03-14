@@ -3,7 +3,6 @@
 var react = require('react');
 var debounce = require('lodash/debounce');
 var reactRedux = require('react-redux');
-var redux = require('redux');
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -262,6 +261,25 @@ var useDebounce = function (f, ms, leading, trailing) {
     }, [f, leading, ms, trailing]);
 };
 
+function bindActionCreators(actionCreators, dispatch) {
+    var boundActionCreators = {};
+    var _loop_1 = function (key) {
+        var actionCreator = actionCreators[key];
+        if (typeof actionCreator === "function") {
+            boundActionCreators[key] = function () {
+                var args = [];
+                for (var _i = 0; _i < arguments.length; _i++) {
+                    args[_i] = arguments[_i];
+                }
+                return dispatch(actionCreator.apply(void 0, __spreadArray([], __read(args), false)));
+            };
+        }
+    };
+    for (var key in actionCreators) {
+        _loop_1(key);
+    }
+    return boundActionCreators;
+}
 function bindActions (actions, dispatch) {
     var boundActionCreators = {};
     // 遍历 actions, 为了绑定 async action
@@ -270,7 +288,7 @@ function bindActions (actions, dispatch) {
         if (Object.prototype.hasOwnProperty.call(actions, key)) {
             var actionCreator = actions[key];
             // @ts-ignore
-            boundActionCreators[key] = redux.bindActionCreators(actionCreator, dispatch);
+            boundActionCreators[key] = bindActionCreators(actionCreator, dispatch);
         }
     }
     return boundActionCreators;

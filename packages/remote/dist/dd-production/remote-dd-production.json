@@ -57,23 +57,28 @@
         "version"
       ]
     },
-    "./node_modules/.pnpm/react-redux@8.1.3_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
-      "id": 3871,
+    "./node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.4_react-redux@8.1.3_react@18.2.0/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js": {
+      "id": 4173,
       "buildMeta": {
-        "exportsType": "namespace"
+        "exportsType": "default",
+        "defaultObject": "redirect"
       },
       "exports": [
-        "Provider",
-        "ReactReduxContext",
-        "batch",
-        "connect",
-        "createDispatchHook",
-        "createSelectorHook",
-        "createStoreHook",
-        "shallowEqual",
-        "useDispatch",
-        "useSelector",
-        "useStore"
+        "useActions",
+        "useArray",
+        "useBoolean",
+        "useCountdown",
+        "useDebounce",
+        "useDebounceActions",
+        "useInput",
+        "useInterval",
+        "useLogger",
+        "useMap",
+        "useNumber",
+        "usePrevious",
+        "useSetState",
+        "useShallowEqualSelector",
+        "useStateful"
       ]
     },
     "./node_modules/.pnpm/@linaria+react@6.0.0_react@18.2.0/node_modules/@linaria/react/dist/index.mjs": {
@@ -120,28 +125,23 @@
         "default"
       ]
     },
-    "./node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.2_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js": {
-      "id": 7883,
+    "./node_modules/.pnpm/react-redux@8.1.3_@types+react-dom@18.2.21_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
+      "id": 8234,
       "buildMeta": {
-        "exportsType": "default",
-        "defaultObject": "redirect"
+        "exportsType": "namespace"
       },
       "exports": [
-        "useActions",
-        "useArray",
-        "useBoolean",
-        "useCountdown",
-        "useDebounce",
-        "useDebounceActions",
-        "useInput",
-        "useInterval",
-        "useLogger",
-        "useMap",
-        "useNumber",
-        "usePrevious",
-        "useSetState",
-        "useShallowEqualSelector",
-        "useStateful"
+        "Provider",
+        "ReactReduxContext",
+        "batch",
+        "connect",
+        "createDispatchHook",
+        "createSelectorHook",
+        "createStoreHook",
+        "shallowEqual",
+        "useDispatch",
+        "useSelector",
+        "useStore"
       ]
     },
     "./node_modules/.pnpm/redux@4.2.1/node_modules/redux/es/redux.js": {

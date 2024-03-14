@@ -1,8 +1,8 @@
 {
   "name": "remote-weapp-development",
   "content": {
-    "./node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.2_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js": {
-      "id": "../../node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.2_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js",
+    "./node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.4_react-redux@8.1.3_react@18.2.0/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js": {
+      "id": "../../node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.4_react-redux@8.1.3_react@18.2.0/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js",
       "buildMeta": {
         "exportsType": "default",
         "defaultObject": "redirect"
@@ -107,8 +107,8 @@
         "defaultObject": "redirect"
       }
     },
-    "./node_modules/.pnpm/react-redux@8.1.3_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
-      "id": "../../node_modules/.pnpm/react-redux@8.1.3_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js",
+    "./node_modules/.pnpm/react-redux@8.1.3_@types+react-dom@18.2.21_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js": {
+      "id": "../../node_modules/.pnpm/react-redux@8.1.3_@types+react-dom@18.2.21_@types+react@18.2.45_react-dom@18.2.0_react@18.2.0_redux@4.2.1/node_modules/react-redux/es/index.js",
       "buildMeta": {
         "exportsType": "namespace"
       },
