@@ -34,8 +34,8 @@
         "default"
       ]
     },
-    "./node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs": {
-      "id": "../../node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs",
+    "./node_modules/.pnpm/@linaria+core@5.0.2/node_modules/@linaria/core/dist/index.mjs": {
+      "id": "../../node_modules/.pnpm/@linaria+core@5.0.2/node_modules/@linaria/core/dist/index.mjs",
       "buildMeta": {
         "exportsType": "namespace",
         "strictHarmonyModule": true
@@ -45,8 +45,8 @@
         "cx"
       ]
     },
-    "./node_modules/.pnpm/@linaria+react@6.0.0_react@18.2.0/node_modules/@linaria/react/dist/index.mjs": {
-      "id": "../../node_modules/.pnpm/@linaria+react@6.0.0_react@18.2.0/node_modules/@linaria/react/dist/index.mjs",
+    "./node_modules/.pnpm/@linaria+react@5.0.3_react@18.2.0/node_modules/@linaria/react/dist/index.mjs": {
+      "id": "../../node_modules/.pnpm/@linaria+react@5.0.3_react@18.2.0/node_modules/@linaria/react/dist/index.mjs",
       "buildMeta": {
         "exportsType": "namespace",
         "strictHarmonyModule": true

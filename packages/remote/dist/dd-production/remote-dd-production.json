@@ -1,18 +1,6 @@
 {
   "name": "remote-dd-production",
   "content": {
-    "./node_modules/.pnpm/@linaria+core@6.0.0/node_modules/@linaria/core/dist/index.mjs": {
-      "id": 1483,
-      "buildMeta": {
-        "exportsType": "namespace",
-        "strictHarmonyModule": true,
-        "sideEffectFree": true
-      },
-      "exports": [
-        "css",
-        "cx"
-      ]
-    },
     "./node_modules/.pnpm/@gmsoft-mini-app+react-hanger@1.0.4_react-redux@8.1.3_react@18.2.0_redux@4.2.1/node_modules/@gmsoft-mini-app/react-hanger/dist/index.js": {
       "id": 2556,
       "buildMeta": {
@@ -81,16 +69,6 @@
         "version"
       ]
     },
-    "./node_modules/.pnpm/@linaria+react@6.0.0_react@18.2.0/node_modules/@linaria/react/dist/index.mjs": {
-      "id": 5365,
-      "buildMeta": {
-        "exportsType": "namespace",
-        "strictHarmonyModule": true
-      },
-      "exports": [
-        "styled"
-      ]
-    },
     "./node_modules/.pnpm/dva-model-creator@0.4.3/node_modules/dva-model-creator/lib/index.js": {
       "id": 5700,
       "buildMeta": {}
@@ -106,6 +84,16 @@
         "utils"
       ]
     },
+    "./node_modules/.pnpm/@linaria+react@5.0.3_react@18.2.0/node_modules/@linaria/react/dist/index.mjs": {
+      "id": 6720,
+      "buildMeta": {
+        "exportsType": "namespace",
+        "strictHarmonyModule": true
+      },
+      "exports": [
+        "styled"
+      ]
+    },
     "./node_modules/.pnpm/dva-loading@3.0.24_dva-core@2.0.4/node_modules/dva-loading/dist/index.esm.js": {
       "id": 6995,
       "buildMeta": {
@@ -114,6 +102,18 @@
       },
       "exports": [
         "default"
+      ]
+    },
+    "./node_modules/.pnpm/@linaria+core@5.0.2/node_modules/@linaria/core/dist/index.mjs": {
+      "id": 7262,
+      "buildMeta": {
+        "exportsType": "namespace",
+        "strictHarmonyModule": true,
+        "sideEffectFree": true
+      },
+      "exports": [
+        "css",
+        "cx"
       ]
     },
     "./node_modules/.pnpm/@gmsoft-mini-app+state-container@1.0.1/node_modules/@gmsoft-mini-app/state-container/dist/index.esm.js": {
